@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://personatge.tscn" type="PackedScene" id=1]
+[ext_resource path="res://cos.tscn" type="PackedScene" id=2]
+[ext_resource path="res://triangle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://personatge.gd" type="Script" id=4]
+
+[node name="joc1" type="Node2D"]
+
+[node name="personatge" parent="." instance=ExtResource( 1 )]
+position = Vector2( 81, 62 )
+script = ExtResource( 4 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 15521, 572 )
+scale = Vector2( 800, 1 )
+
+[node name="rectangle5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1188, 476 )
+scale = Vector2( 2.5, 1 )
+
+[node name="rectangle7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1411, 368 )
+scale = Vector2( 2.5, 1 )
+
+[node name="rectangle6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1304, 424 )
+scale = Vector2( 2.5, 1 )
+
+[node name="rectangle4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1074, 531 )
+scale = Vector2( 2.5, 1 )
+
+[node name="quadrat2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 530, 460 )
+scale = Vector2( 1.5, 1 )
+
+[node name="quadrat3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 634, 396 )
+scale = Vector2( 1.5, 1 )
+
+[node name="quadrat1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 427, 531 )
+scale = Vector2( 1.5, 1 )
+
+[node name="StaticBody2D14" parent="." instance=ExtResource( 2 )]
+position = Vector2( -239, 531 )
+scale = Vector2( 12, 10 )
+
+[node name="trisngle" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1101, 511 )
+
+[node name="trisngle2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1215, 456 )
+
+[node name="trisngle3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1331, 404 )
+
+[node name="trisngle4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1438, 347 )
